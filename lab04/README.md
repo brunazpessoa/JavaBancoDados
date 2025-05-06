@@ -1,18 +1,36 @@
-## Getting Started
+# 💰 Sistema de Gerenciamento de Contas Bancárias
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é um sistema de terminal em Java que permite consultar, adicionar, alterar e remover contas bancárias armazenadas em um banco de dados PostgreSQL. Ele utiliza JDBC para conectar-se ao banco e realizar as operações de CRUD.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 📌 Funcionalidades
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+- 🔍 **Consultar contas** existentes no banco.
+- ➕ **Adicionar nova conta** com número e saldo.
+- ♻️ **Alterar saldo** de uma conta existente.
+- 🗑 **Remover conta** do banco.
+- 💾 **Persistência via banco de dados PostgreSQL** com uso de `PreparedStatement`.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🗂 Estrutura do Projeto
 
-## Dependency Management
+- `App.java`: conexão básica com o banco e exibição das contas.
+- `Main.java`: interface via terminal com menu interativo.
+- `Conta.java`: classe que representa uma conta bancária com número e saldo.
+- `ObjetoDados.java`: camada de persistência que faz operações no banco (DAO).
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## 🛠 Tecnologias Usadas
+
+- Java 8+
+- JDBC (Java Database Connectivity)
+- PostgreSQL
+- Supabase (como provedor de banco hospedado)
+
+---
+
+## 🧠 Exemplo de Uso (Main)
+
