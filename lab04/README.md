@@ -32,5 +32,4 @@ Este projeto é um sistema de terminal em Java que permite consultar, adicionar,
 
 ---
 
-## 🧠 Exemplo de Uso (Main)
 
